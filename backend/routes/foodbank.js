@@ -32,7 +32,8 @@ router.get("/addfoodbank", (req, res) => {
         address: "sdcdec edclmdich aeldcojdihc sidhcudsgc isdhcuhdhcuds siod",
         website: "www.helloworld.com",
         moto: "Solving hunger",
-        phoneno:"1234567890"
+        phoneno: "1234567890",
+        image:"",
     })
     newFoodBank.save()
         .then(res => {

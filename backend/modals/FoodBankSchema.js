@@ -31,6 +31,10 @@ const FoodBankSchema = new mongoose.Schema({
     phoneno: {
         type: String,
         required: true,
+    },
+    image: {
+        type: String,
+        default:""
     }
 });
 const FoodBank = mongoose.model("FoodBank", FoodBankSchema);

@@ -3,21 +3,30 @@ const router = express.Router();
 const UserSchema = require("../modals/UserSchema");
 const bcrypt = require("bcrypt");
 const passport = require('passport');
-//login page
-router.get("/register", (req, res) => {
-    res.render("Success");
-})
+
 //login
 router.post('/login', (req, res, next) => {
-    console.log("called");
-    passport.authenticate('local', function(req, res) {
-        console.log(req);
-        console.log(res);
-        //if authentication suceesful the add here
-        res.send("Authenticated");
-        console.log("Authentication successfull");
-    })
-    res.send("error")
+    console.log("login called");
+    // passport.authenticate('local', function(req, res) {
+    //     console.log(req);
+    //     console.log(res);
+    //     //if authentication suceesful the add here
+    //     res.send("Authenticated");
+    //     console.log("Authentication successfull");
+    // })
+    // res.send("error")
+    UserSchema.findOne({ email: req.body.email })
+        .then(res => {
+            console.log(res)
+            bcrypt.compare(req.body.password, res.password, function(err, result) {
+                if(result == true)
+                console.log("matched")
+                if(result==false)
+                console.log(" not matched")
+            });
+        }).catch(err => {
+            console.log(err)
+        });
 });
 
  //register post handle

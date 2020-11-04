@@ -7,6 +7,8 @@ const user = require("./routes/user");
 const passport = require("passport");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const foodbanks=require("./routes/foodbank")
+const adminsection=require("./routes/admin")
 //connecting to mongodb
 mongoose.connect('mongodb://localhost/hungerconnects', { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
@@ -37,10 +39,9 @@ app.use(passport.session());
 
 // setting user routes
 app.use("/user", user);
-// app.post("/user/register", (req, res) => {
-//     console.log(req.body)
-//     console.log("called")
-// })
+app.use("/foodbanks", foodbanks);
+app.use("/admin",adminsection );
+
 //listening on the port
 app.listen(port, (err) => {
     if (err) {

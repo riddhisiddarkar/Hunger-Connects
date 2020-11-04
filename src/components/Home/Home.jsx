@@ -4,7 +4,6 @@ function Home() {
         <div className="img">
             
         </div>
-        <div>Home page</div>
     )
 }
 

@@ -1,7 +1,7 @@
 import "./Home.css"
 function Home() {
     return (
-        <div className="hi">Hello</div>
+        <div>Home page</div>
     )
 }
 

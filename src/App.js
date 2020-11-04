@@ -1,4 +1,5 @@
 import './App.css';
+import Approuter from "./router/Router"
 import Register from "./components/Register/Register"
 import Login from "./components/Login/Login"
 import Home from "./components/Home/Home"
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <Register /> */}
       {/* <Login /> */}
-      <Home />
+      {/* <Home /> */}
+      <Approuter />
       {/* <Footer /> */}
     </div>
   );

@@ -10,6 +10,8 @@ function Register() {
             password:password,
         }).then(res => {
             console.log("successfully logged in");
+            console.log(res);
+            localStorage.setItem("hungereats", res.data);
         }).catch(err => {
             console.log("Error in register");
             console.log(err);

@@ -3,7 +3,7 @@ const router = express.Router();
 const UserSchema = require("../modals/UserSchema");
 const bcrypt = require("bcrypt");
 const passport = require('passport');
-
+// const localStorage=localStorage()
 //login
 router.post('/login', (req, res, next) => {
     console.log("login called");
@@ -16,16 +16,22 @@ router.post('/login', (req, res, next) => {
     // })
     // res.send("error")
     UserSchema.findOne({ email: req.body.email })
-        .then(res => {
-            console.log(res)
-            bcrypt.compare(req.body.password, res.password, function(err, result) {
-                if(result == true)
-                console.log("matched")
-                if(result==false)
-                console.log(" not matched")
+        .then(r => {
+            console.log(r)
+            bcrypt.compare(req.body.password, r.password, function(err, result) {
+                if (result == true) {
+                    console.log("matched")
+                    console.log(r._id)
+                    res.send(r._id)
+                }
+                if (result == false) {
+                    console.log(" not matched")
+                    res.status(403).send("No authenticated")
+                }
             });
         }).catch(err => {
             console.log(err)
+            res.status(403).send("No authenticated");
         });
 });
 
@@ -50,13 +56,6 @@ router.post('/register', (req, res) => {
         errors.push({ msg: 'password atleast 6 characters' })
     }
     if (errors.length > 0) {
-        // res.render('register', {
-        //     errors: errors,
-        //     name: name,
-        //     email: email,
-        //     password: password,
-        //     cpassword: cpassword
-        // })
         //error here
         res.status(402).send("Something went wrong");
         console.log("Error in the registeration here. Either one field is empty or passwords not matching")
@@ -107,8 +106,6 @@ router.post('/register', (req, res) => {
 //logout
 router.get('/logout',(req,res)=>{
 req.logout();
-req.flash('success_msg','Now logged out');
-res.redirect('/users/login'); 
 })
 
 module.exports = router;

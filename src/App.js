@@ -4,9 +4,9 @@ import FoodCardBank from "./components/FoodBankcard/FoodBankCard"
 function App() {
   return (
     <div className="App">
-      {/* <Approuter /> */}
+      <Approuter />
       {/* <Location></Location> */}
-      <FoodCardBank />
+      {/* <FoodCardBank /> */}
     </div>
   );
 }

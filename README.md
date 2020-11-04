@@ -1,3 +1,34 @@
+### After cloning the project do a npm start
+
+# frontend>src>component should have a folder of each page
+
+# if u want to make a page then make a folder. inthe folder make a filename.jsx
+
+# copy the following contents
+
+function <filename>() {
+return (
+<>
+//your html
+</>
+)
+}
+
+export default <filename>;
+
+for adding css eg
+className="your-class-name"
+
+#### add css to frontend>src>app.css
+
+#####contents are rendered though app.js
+
+import the file on top based on the location and then
+render it as
+<Filename />
+
+in the className="App" div
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

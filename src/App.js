@@ -13,11 +13,11 @@ function App() {
       {/* <Login /> */}
       {/* <Home /> */}
       {/* <Approuter /> */}
-      {/* <Location></Location> */}
+      <Location></Location>
       {/* <FoodCardBank /> */}
       {/* <Register></Register> */}
       {/* <Login></Login> */}
-      <HelpUs/>
+      {/* <HelpUs/> */}
       {/* <Footer /> */}
     </div>
   );

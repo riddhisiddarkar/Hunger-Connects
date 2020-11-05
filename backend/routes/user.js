@@ -3,7 +3,7 @@ const router = express.Router();
 const UserSchema = require("../modals/UserSchema");
 const bcrypt = require("bcrypt");
 const passport = require('passport');
-// const localStorage=localStorage()
+
 //login
 router.post('/login', (req, res, next) => {
     console.log("login called");
@@ -108,4 +108,16 @@ router.get('/logout',(req,res)=>{
 req.logout();
 })
 
+//for authentication
+router.post('/idverify', (req, res) => {
+    console.log(req.body.id)
+    UserSchema.findById(req.params.id)
+        .then(r => {
+            console.log(r)
+            res.send("Authenticated")
+        }).catch(err => {
+            console.log(err)
+            res.send(err)
+        });
+})
 module.exports = router;

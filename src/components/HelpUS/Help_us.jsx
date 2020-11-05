@@ -1,6 +1,6 @@
 import "./HelpUS.css"
 import {useState, useEffect} from "react"
-import Axios from "axios"
+import axios from "axios"
 
 function Help_us({history}) {
     const [number, setnumber] = useState()

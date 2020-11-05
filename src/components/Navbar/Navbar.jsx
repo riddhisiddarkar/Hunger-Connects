@@ -26,6 +26,9 @@ function Navbar() {
             <li class="navlink" id="login">
               Logout
             </li>
+            <li class="navlink" id="Donate">
+              Donate
+            </li>
           </ul>
       </nav>
     </div>

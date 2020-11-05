@@ -4,7 +4,6 @@ function Navbar() {
   return (
     <div>
       <nav>
-        <div class="outside_div">
           <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -22,13 +21,12 @@ function Navbar() {
               Food banks
             </li></Link>
             <li class="navlink" id="contactme">
-              Contact Us
+              Contact Us  
             </li>
             <li class="navlink" id="login">
               Logout
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   );

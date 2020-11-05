@@ -57,7 +57,7 @@ a {
   }
   .hamburger {
     position: absolute;
-    top: -28px;
+    top: 8px;
     left: 22px;
     z-index: 200;
   }
@@ -65,7 +65,7 @@ a {
     width: 30px;
     height: 3px;
     margin: 5px;
-    background-color: white;
+    background-color: rgba(149, 0, 27, 1);
     color: black;
     z-index: 20;
   }
@@ -86,15 +86,15 @@ a {
     flex-direction: column;
     top: 0px;
     z-index: 2;
-    -webkit-clip-path: circle(0px at 90% 0%);
-    clip-path: circle(0px at 0% 90%);
+    -webkit-clip-path: circle(0px at 0% 90%);
+    clip-path: circle(0px at 90% 0%);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     pointer-events: none;
   }
   .navlinks.open {
-    -webkit-clip-path: circle(800px at 90% 0%);
-    clip-path: circle(800px at 90% 0%);
+    -webkit-clip-path: circle(800px at 0% 90%);
+    clip-path: circle(800px at 0% 90%);
     pointer-events: all;
   }
   #company {

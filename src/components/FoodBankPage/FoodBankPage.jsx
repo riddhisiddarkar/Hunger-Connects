@@ -10,9 +10,9 @@ function FoodBankPage({ match,history }) {
     useEffect(() => {
                 if (!localStorage.getItem("hungerconnects"))
             history.push("/login")
-            axios.post("http://localhost:5000/user/idverify", {
-                id: localStorage.getItem("hungerconnects")
-            }).then(() => {
+            // axios.post("http://localhost:5000/user/idverify", {
+                // id: localStorage.getItem("hungerconnects")
+            // }).then(() => {
                 axios.get("http://localhost:5000/foodbanks/localisedfoodbanks/" + match.params.location)
                     .then(res => {
                         console.log(res.data);
@@ -20,14 +20,13 @@ function FoodBankPage({ match,history }) {
                     }).catch(err => {
                         console.log(err);
                     })
-            })
+            // })
         }, [])
     useEffect(() => {
     }, [location])
     return (
         <>
             <Navbar />
-            <div>Panaji</div>
         <div className="FoodBankPage" >
             {
                 location.map((e,i)=><FoodBankCard key={i} foodbank={e} />)

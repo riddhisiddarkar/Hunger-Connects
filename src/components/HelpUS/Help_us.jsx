@@ -7,11 +7,11 @@ function Help_us({history}) {
     useEffect(() => {
         if (!localStorage.getItem("hungerconnects"))
         history.push("/login")
-        axios.post("http://localhost:5000/user/idverify", {
-            id: localStorage.getItem("hungerconnects")
-        }).catch(err => {
-            history.push("/login")
-        })
+        // axios.post("http://localhost:5000/user/idverify", {
+            // id: localStorage.getItem("hungerconnects")
+        // }).catch(err => {
+        //     history.push("/login")
+        // })
     })
     const addtolist = (e) => {
         e.preventDefault()

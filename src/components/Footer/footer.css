@@ -5,8 +5,8 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   color: white;
   background-color: rgba(149, 0, 27, 1);
   padding: 1% 3%;

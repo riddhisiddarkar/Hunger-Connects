@@ -2,12 +2,20 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  min-height: 90vh;
 }
 .connectingbutton {
   color: brown;
   position: absolute;
   bottom: 70px;
   right: 20px;
+}
+
+.hamburger {
+  position: absolute;
+  top: -20px;
+  left: 22px;
+  z-index: 200;
 }
 @media (max-width: 600px) {
   .FoodBankPage {

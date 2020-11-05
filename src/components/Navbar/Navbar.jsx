@@ -4,7 +4,6 @@ function Navbar() {
   const opennavbar = () => {
     document.querySelectorAll(".line").forEach((element,i) => {
       element.classList.toggle("open")
-      console.log(element.classList); 
     });
     document.querySelector(".navlinks").classList.toggle("open")
     }
@@ -17,7 +16,7 @@ function Navbar() {
             <div className="line"></div>
             <div className="line"></div>
           </div>
-          <ul className="open navlinks">
+          <ul className="navlinks">
             <li className="navlink" id="company">
               HUNGER CONNECT
             </li>

@@ -8,9 +8,9 @@ function AllFoodBanks({ match, history }) {
     useEffect(() => {
         if (!localStorage.getItem("hungerconnects"))
             history.push("/login")
-        axios.post("http://localhost:5000/user/idverify", {
-            id: localStorage.getItem("hungerconnects")
-        }).then(() => {
+        // axios.post("http://localhost:5000/user/idverify", {
+            // id: localStorage.getItem("hungerconnects")
+        // }).then(() => {
             axios.get("http://localhost:5000/foodbanks/")
                 .then(res => {
                     console.log(res.data);
@@ -19,7 +19,7 @@ function AllFoodBanks({ match, history }) {
                     alert("catch1")
                     console.log(err);
                 })
-        })
+        // })
     }, []);
     useEffect(() => {
     }, [location])

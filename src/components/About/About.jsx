@@ -1,6 +1,9 @@
 import './about.css'
+import Navbar from "../Navbar/Navbar"
 function About() {
   return (
+    <>
+    <Navbar />
       <div className="ourstory">
         <h1 id="heading">About Us</h1>
         <h2 id="story">
@@ -50,7 +53,8 @@ function About() {
           </div>
         </div>
       </div>
-</div>
+      </div>
+      </>
   )
 }
 

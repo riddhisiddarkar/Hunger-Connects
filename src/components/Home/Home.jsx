@@ -10,7 +10,6 @@ function Home() {
                 <button type="submit">LOGIN</button>
             </div>
         </div>
-         
     )
 }
 

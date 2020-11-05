@@ -1,17 +1,15 @@
 import "./FoodBankCard.css"
-function FoodBankCard() {
+function FoodBankCard({foodbank}) {
     return (
         <div className="cardmaindiv">
             <div className="foodbankname">
-                <p>Dheeraj gndhi sanstha of chapli ppl </p>
+                <p>{foodbank.name}</p>
             </div>
-            <img src="https://static01.nyt.com/images/2020/05/14/business/14mcdonalds-1/14mcdonalds-1-mobileMasterAt3x.jpg" alt="Food Bank Image" className="foodbankimage" />
+            <img src={foodbank.image}alt="Food Bank Image" className="foodbankimage" />
             <div className="foodbankdetails">
-                <p className="foodbackmoto">We provide food for the needy without any problems 
-                 
-                    caused to the people </p>
-                <p className="foodbankcontact">Contact : <span> 9834576534</span></p>
-            <div className="viewwebsite">View Website</div>
+                <p className="foodbackmoto">{foodbank.moto}</p>
+                <p className="foodbankcontact">Contact : <span>{foodbank.phoneno}</span></p>
+            <div className="viewwebsite"><a href={`${foodbank.website}`}>View Website</a></div>
             </div>
         </div>
     )

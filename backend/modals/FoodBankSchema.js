@@ -35,6 +35,10 @@ const FoodBankSchema = new mongoose.Schema({
     image: {
         type: String,
         default:""
+    },
+    registerationid: {
+        type: String,
+        required: true,
     }
 });
 const FoodBank = mongoose.model("FoodBank", FoodBankSchema);

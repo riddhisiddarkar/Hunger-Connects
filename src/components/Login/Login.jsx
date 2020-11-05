@@ -1,6 +1,7 @@
 import {useState} from "react"
 import axios from "axios"
-function Register() {
+import "./Login.css"
+function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const submitlogin = (e) => {
@@ -18,12 +19,25 @@ function Register() {
         })
     }
     return (
-        <form>
-            <input type="text" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
-            <input type="text" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
-            <button type="submit" onClick={submitlogin}>Register</button>
-        </form>
+        <div className="Login">
+            <div className="Container-Login">
+                <form className="form">
+                    <h2>Sign In</h2>
+                    <label>
+                    <span>Email Address:</span>
+                    <input type="text"  onChange={(e) => setEmail(e.target.value)} />
+                    </label>
+                    <label>
+                    <span>Password:</span>
+                    <input type="text" onChange={(e) => setPassword(e.target.value)} />
+                    </label>
+                    <button className="submit" type="submit" onClick={submitlogin}>Sign In</button>
+                    <p className="question">New here?</p>
+                    <p className="sign-up-link">Sign Up</p>
+                </form>
+            </div>
+        </div>
     )
 }
 
-export default Register;
+export default Login;

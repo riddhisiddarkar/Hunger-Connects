@@ -1,11 +1,9 @@
 import "./App.css";
 import Approuter from "./router/Router";
-import Register from "./components/Register/Register";
-import Login from "./components/Login/Login";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
 import FoodCardBank from "./components/FoodBankcard/FoodBankCard";
+import Location from "./components/Location/Location";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 function App() {
   return (
     <div className="App">
@@ -14,8 +12,6 @@ function App() {
       {/* <Login /> */}
       {/* <Home /> */}
       {/* <Approuter /> */}
-
-      {/* <Footer /> */}
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
       <Footer />

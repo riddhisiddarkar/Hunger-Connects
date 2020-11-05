@@ -1,0 +1,9 @@
+.FoodBankPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+@media (max-width: 600px) {
+  .FoodBankPage {
+    grid-template-columns: 1fr;
+  }
+}

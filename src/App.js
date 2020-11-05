@@ -8,12 +8,17 @@ import HelpUs from './components/HelpUS/Help_us'
 function App() {
   return (
     <div className="App">
+      {/* <Register /> */}
+      {/* <Navbar /> */}
+      {/* <Login /> */}
+      {/* <Home /> */}
       {/* <Approuter /> */}
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
       {/* <Register></Register> */}
       {/* <Login></Login> */}
       <HelpUs/>
+      {/* <Footer /> */}
     </div>
   );
 }

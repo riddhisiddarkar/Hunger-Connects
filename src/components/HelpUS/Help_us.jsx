@@ -4,8 +4,8 @@ import Axios from "axios"
 
 function Help_us() {
     const [number, setnumber] = useState()
-    const addtolist = () => {
-        alert("called")
+    const addtolist = (e) => {
+        e.preventDefault()
         let children=false;
         let parents=false;
         const childbox = document.getElementById("childbox")
@@ -18,11 +18,11 @@ function Help_us() {
         const object = {
             number,children,parents
         }
-        Axios.post("http://localhost:5000/admin/addtohungrylist", object)
-            .then(res => {
-                console.log("Success");
+        // Axios.post("http://localhost:5000/admin/addtohungrylist", object)
+        //     .then(res => {
+        //         console.log("Success");
                 thanks.style.display="block"
-        })
+        // })
     }
     return (
         <div className="background">

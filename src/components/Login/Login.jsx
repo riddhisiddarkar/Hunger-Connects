@@ -1,7 +1,8 @@
 import {useState} from "react"
 import axios from "axios"
 import "./Login.css"
-function Login() {
+import {Link} from "react-router-dom"
+function Login({history}) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const submitlogin = (e) => {
@@ -13,7 +14,9 @@ function Login() {
             console.log("successfully logged in");
             console.log(res);
             localStorage.setItem("hungereats", res.data);
+            history.push("/location")
         }).catch(err => {
+            alert("wrong password or email")
             console.log("Error in register");
             console.log(err);
         })
@@ -33,7 +36,7 @@ function Login() {
                     </label>
                     <button className="submit" type="submit" onClick={submitlogin}>Sign In</button>
                     <p className="question">New here?</p>
-                    <p className="sign-up-link">Sign Up</p>
+                    <Link to="/register"><p className="sign-up-link">Sign Up</p></Link>
                 </form>
             </div>
         </div>

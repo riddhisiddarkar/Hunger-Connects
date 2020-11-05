@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 function Navbar() {
   return (
@@ -14,16 +15,17 @@ function Navbar() {
               HUNGER CONNECT
             </li>
             <li class="navlink" id="aboutus">
-              about us
+              About us
             </li>
+            <Link to="/foodbanks">
             <li class="navlink" id="foodbanks">
               Food banks
-            </li>
+            </li></Link>
             <li class="navlink" id="contactme">
               Contact Us
             </li>
             <li class="navlink" id="login">
-              login
+              Logout
             </li>
           </ul>
         </div>

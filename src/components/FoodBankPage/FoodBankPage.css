@@ -1,8 +1,13 @@
 .FoodBankPage {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 .connectingbutton {
+  color: brown;
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
 }
 @media (max-width: 600px) {
   .FoodBankPage {

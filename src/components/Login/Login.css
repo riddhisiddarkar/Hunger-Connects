@@ -103,6 +103,7 @@ button {
   font-weight: 600;
   color: #0c0101;
   cursor: pointer;
+  margin-top: 20px;
 }
 .sign-up-link:hover {
   color: green;

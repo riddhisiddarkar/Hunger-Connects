@@ -47,28 +47,28 @@
 .overlay button:hover {
   background-color: #95001b;
 }
-@media (max-width:810px){
-  .overlay h1{
+@media (max-width: 810px) {
+  .overlay h1 {
     position: absolute;
     left: 3%;
     top: 130px;
-    font-size: 75px;
+    font-size: 60px;
   }
 }
-@media (max-width:760px){
-  .overlay h1{
+@media (max-width: 760px) {
+  .overlay h1 {
     position: absolute;
     left: 3%;
     line-height: 80px;
     top: 70px;
-    font-size: 75px;
+    font-size: 40px;
   }
 }
-@media (max-width:600px){
-  .overlay h1{
-    font-size: 70px;
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 40px;
   }
-  .overlay h3{
+  .overlay h3 {
     font-size: 25px;
   }
 }

@@ -1,5 +1,6 @@
 import {useState} from "react"
 import axios from "axios"
+import {Link} from "react-router-dom"
 function Register({history}) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -43,7 +44,7 @@ function Register({history}) {
                     </label>
                     <button className="submit" type="submit" onClick={submitlogin}>Sign Up</button>
                     <p className="question">Already a member?</p>
-                    <p className="sign-up-link">Sign In</p>
+                    <Link to="/login"><p className="sign-up-link">Sign In</p></Link>
                 </form>
             </div>
         </div>

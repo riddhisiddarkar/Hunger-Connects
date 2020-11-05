@@ -7,6 +7,7 @@ import Register from "../components/Register/Register";
 import FoodBankPage from "../components/FoodBankPage/FoodBankPage";
 import Location from "../components/Location/Location"
 import AllFoodBanks from "../components/AllFoodBanks/AllFoodBanks";
+import Help_us from "../components/HelpUS/Help_us";
 const AppRouter = () => (
 	<Router>
         <Switch>
@@ -17,6 +18,7 @@ const AppRouter = () => (
             <Route path="/foodbank/:location" component={FoodBankPage} exact={true} />
             <Route path="/location" component={Location} exact={true} />
             <Route path="/foodbanks" component={AllFoodBanks} exact={true} />
+            <Route path="/tellus" component={Help_us} exact={true} />
 		</Switch>
 	</Router>
 );

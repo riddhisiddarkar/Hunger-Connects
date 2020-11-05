@@ -6,13 +6,14 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import HelpUs from './components/HelpUS/Help_us'
 import Home from './components/Home/Home'
+import About from './components/About/About'
 function App() {
   return (
     <div className="App">
       {/* <Register /> */}
       {/* <Navbar /> */}
       {/* <Login /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Approuter /> */}
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
@@ -20,6 +21,7 @@ function App() {
       {/* <Login></Login> */}
       {/* <HelpUs/> */}
       {/* <Footer /> */}
+      <About/>
     </div>
   );
 }

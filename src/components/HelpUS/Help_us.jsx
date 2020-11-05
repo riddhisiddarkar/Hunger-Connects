@@ -1,9 +1,18 @@
 import "./HelpUS.css"
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import Axios from "axios"
 
-function Help_us() {
+function Help_us({history}) {
     const [number, setnumber] = useState()
+    useEffect(() => {
+        if (!localStorage.getItem("hungerconnects"))
+        history.push("/login")
+        axios.post("http://localhost:5000/user/idverify", {
+            id: localStorage.getItem("hungerconnects")
+        }).catch(err => {
+            history.push("/login")
+        })
+    })
     const addtolist = (e) => {
         e.preventDefault()
         let children=false;
@@ -21,7 +30,8 @@ function Help_us() {
         // Axios.post("http://localhost:5000/admin/addtohungrylist", object)
         //     .then(res => {
         //         console.log("Success");
-                thanks.style.display="block"
+        thanks.style.display = "block"
+        history.push("/")
         // })
     }
     return (

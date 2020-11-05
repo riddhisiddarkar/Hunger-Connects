@@ -9,7 +9,12 @@ nav {
   top: 0;
   overflow-x: hidden;
 }
-
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
 .navlinks {
   background-color: rgba(149, 0, 27, 1);
   height: 7vh;
@@ -63,11 +68,12 @@ a {
     width: 30px;
     height: 3px;
     margin: 5px;
-    background-color: rgb(255, 255, 255);
-    z-index: 3;
+    background-color: white;
+    color: black;
+    z-index: 20;
   }
   .line.open {
-    background-color: var(--bg);
+    background-color: white;
   }
   .navlink {
     font-size: 1rem;

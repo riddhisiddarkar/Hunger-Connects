@@ -13,7 +13,7 @@ function Login({history}) {
         }).then(res => {
             console.log("successfully logged in");
             console.log(res);
-            localStorage.setItem("hungereats", res.data);
+            localStorage.setItem("hungerconnects", res.data);
             history.push("/location")
         }).catch(err => {
             alert("wrong password or email")

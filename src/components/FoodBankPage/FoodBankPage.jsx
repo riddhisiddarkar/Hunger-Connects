@@ -8,12 +8,18 @@ function FoodBankPage({ match }) {
     const [location, setlocation] = useState([])
     console.log(match.params.location);
     useEffect(() => {
-        axios.get("http://localhost:5000/foodbanks/localisedfoodbanks/"+match.params.location)
-            .then(res => {
-                console.log(res.data);
-                setlocation(res.data)
-            }).catch(err => {
-            console.log(err);
+                if (!localStorage.getItem("hungerconnects"))
+            history.push("/login")
+        axios.post("http://localhost:5000/user/idverify", {
+            id: localStorage.getItem("hungerconnects")
+        }).then(() => {
+            axios.get("http://localhost:5000/foodbanks/localisedfoodbanks/" + match.params.location)
+                .then(res => {
+                    console.log(res.data);
+                    setlocation(res.data)
+                }).catch(err => {
+                    console.log(err);
+                })
         })
     }, [])
     useEffect(() => {

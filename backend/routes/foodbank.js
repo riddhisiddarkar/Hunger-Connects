@@ -16,7 +16,6 @@ router.get('/', (req, res) => {
 
 //to get all the foodbanks in a particular location
 router.get("/localisedfoodbanks/:location", (req, res) => {
-    console.log(req.params.location)
     FoodBankSchema.find({ location: req.params.location })
         .then(data => {
             console.log(data)

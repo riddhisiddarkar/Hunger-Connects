@@ -34,6 +34,9 @@ function Navbar() {
             <li className="navlink" id="login">
               Logout
             </li>
+            <li class="navlink" id="Donate">
+              Donate
+            </li>
           </ul>
         </div>
       </nav>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {/* <Register /> */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Login /> */}
       {/* <Home /> */}
       {/* <Approuter /> */}
@@ -18,6 +18,7 @@ function App() {
       {/* <Footer /> */}
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
+      <Footer />
     </div>
   );
 }

@@ -51,3 +51,15 @@
 .send_loc:hover {
   background-color: #95001b;
 }
+ @media (max-width:600px){
+   .Areas{
+     position: absolute;
+     top:290px;
+     width: 370px;
+   }
+   .send_loc{
+     position:absolute;
+     top:370px;
+     width:200px
+   }
+ }

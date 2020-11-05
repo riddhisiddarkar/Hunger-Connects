@@ -14,7 +14,7 @@
 }
 .overlay h1 {
   position: absolute;
-  left: 50px;
+  left: 3%;
   top: 130px;
   font-family: Poppins;
   color: #d1d1d1;
@@ -26,7 +26,7 @@
 }
 .overlay h3 {
   position: absolute;
-  left: 50px;
+  left: 3%;
   top: 270px;
   font-family: Poppins;
   color: #d1d1d1;
@@ -35,7 +35,7 @@
 }
 .overlay button {
   position: absolute;
-  left: 50px;
+  left: 3%;
   top: 380px;
   width: 150px;
   height: 50px;
@@ -46,4 +46,29 @@
 }
 .overlay button:hover {
   background-color: #95001b;
+}
+@media (max-width:810px){
+  .overlay h1{
+    position: absolute;
+    left: 3%;
+    top: 130px;
+    font-size: 75px;
+  }
+}
+@media (max-width:760px){
+  .overlay h1{
+    position: absolute;
+    left: 3%;
+    line-height: 80px;
+    top: 70px;
+    font-size: 75px;
+  }
+}
+@media (max-width:600px){
+  .overlay h1{
+    font-size: 70px;
+  }
+  .overlay h3{
+    font-size: 25px;
+  }
 }

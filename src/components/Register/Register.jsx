@@ -21,13 +21,32 @@ function Register({history}) {
         })
     }
     return (
-        <form>
-            <input type="text" placeholder="name" onChange={(e) => setName(e.target.value)} />
-            <input type="text" placeholder="email" onChange={(e) => setEmail(e.target.value)} />
-            <input type="text" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
-            <input type="text" placeholder="cpassword" onChange={(e) => setCpassword(e.target.value)} />
-            <button type="submit" onClick={submitlogin}>Register</button>
-        </form>
+        <div className="Login">
+            <div className="Container-SignUp">
+                <form className="form">
+                    <h2>Sign Up</h2>
+                    <label>
+                    <span>Name:</span>
+                    <input type="text"  onChange={(e) => setName(e.target.value)} />
+                    </label>
+                    <label>
+                    <span>Email Address:</span>
+                    <input type="text"  onChange={(e) => setEmail(e.target.value)} />
+                    </label>
+                    <label>
+                    <span>Password:</span>
+                    <input type="text"  onChange={(e) => setPassword(e.target.value)} />
+                    </label>
+                    <label>
+                    <span>Confirm Password:</span>
+                    <input type="text"  onChange={(e) => setCpassword(e.target.value)} />
+                    </label>
+                    <button className="submit" type="submit" onClick={submitlogin}>Sign Up</button>
+                    <p className="question">Already a member?</p>
+                    <p className="sign-up-link">Sign In</p>
+                </form>
+            </div>
+        </div>
     )
 }
 

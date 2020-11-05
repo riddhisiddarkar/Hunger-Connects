@@ -32,6 +32,7 @@
   font-size: 25px;
   text-align: center;
   color: #939393;
+  box-shadow: 0px 0px 7px 3px rgba(226, 56, 56, 0.68);
 }
 .send_loc {
   position: absolute;

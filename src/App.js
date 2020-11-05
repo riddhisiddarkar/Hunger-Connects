@@ -4,6 +4,7 @@ import FoodCardBank from "./components/FoodBankcard/FoodBankCard"
 import Location from "./components/Location/Location"
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import HelpUs from './components/HelpUS/Help_us'
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
       {/* <Register></Register> */}
-      <Login></Login>
+      {/* <Login></Login> */}
+      <HelpUs/>
     </div>
   );
 }

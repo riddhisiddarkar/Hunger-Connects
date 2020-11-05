@@ -16,8 +16,8 @@ function App() {
       {/* <Location></Location> */}
       {/* <FoodCardBank /> */}
       {/* <Register></Register> */}
-      <Login></Login>
-      {/* <HelpUs/> */}
+      {/* <Login></Login> */}
+      <HelpUs/>
       {/* <Footer /> */}
     </div>
   );

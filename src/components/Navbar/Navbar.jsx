@@ -9,15 +9,21 @@ function Navbar() {
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <ul class="navlinks">
-            <li class="navlink" id="aboutusmain">
-              hello
+          <ul class="open navlinks">
+            <li class="navlink" id="company">
+              HUNGER CONNECT
             </li>
-            <li class="navlink" id="techinjust">
-              Technologies
+            <li class="navlink" id="aboutus">
+              about us
+            </li>
+            <li class="navlink" id="foodbanks">
+              Food banks
             </li>
             <li class="navlink" id="contactme">
-              Contact me
+              Contact Us
+            </li>
+            <li class="navlink" id="login">
+              login
             </li>
           </ul>
         </div>

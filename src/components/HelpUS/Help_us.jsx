@@ -1,6 +1,7 @@
 import "./HelpUS.css"
 import {useState, useEffect} from "react"
 import axios from "axios"
+import Navbar from "../Navbar/Navbar"
 
 function Help_us({history}) {
     const [number, setnumber] = useState()
@@ -35,6 +36,8 @@ function Help_us({history}) {
         // })
     }
     return (
+        <>
+            <Navbar />
         <div className="background">
             <div className="over-lay">
                  <p className="thanksmessage" id="thanks">Thank you! We shall try to help</p>
@@ -56,7 +59,9 @@ function Help_us({history}) {
                     <button type="submit" className="submit_btn" onClick={addtolist}>SUBMIT</button>
              </form>
             </div>
-        </div>
+            </div>
+        </>
+        
     )
 }
 

@@ -27,7 +27,7 @@ nav {
   color: aliceblue;
 }
 #company {
-  margin-right: 40%;
+  margin-right: 30%;
   font-weight: bold;
 }
 #company:hover {
@@ -56,12 +56,13 @@ a {
     position: relative;
   }
   .hamburger {
-    position: absolute;
     top: 8px;
     left: 22px;
     z-index: 200;
+    position: absolute;
   }
   .line {
+    /* position: fixed; */
     width: 30px;
     height: 3px;
     margin: 5px;
@@ -71,6 +72,7 @@ a {
   }
   .line.open {
     background-color: white;
+    position: fixed;
   }
   .navlink {
     font-size: 1rem;
@@ -86,15 +88,15 @@ a {
     flex-direction: column;
     top: 0px;
     z-index: 2;
-    -webkit-clip-path: circle(0px at 0% 90%);
-    clip-path: circle(0px at 90% 0%);
+    -webkit-clip-path: circle(0px at 0% 0%);
+    clip-path: circle(0px at 0% 0%);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     pointer-events: none;
   }
   .navlinks.open {
-    -webkit-clip-path: circle(800px at 0% 90%);
-    clip-path: circle(800px at 0% 90%);
+    -webkit-clip-path: circle(800px at 0% 0%);
+    clip-path: circle(800px at 0% 0%);
     pointer-events: all;
   }
   #company {

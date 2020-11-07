@@ -10,7 +10,7 @@
 }
 #heading {
   padding-bottom: 2.5%;
-  color:  #95001b;
+  color: #95001b;
   font-size: 60px;
   font-family: "poppins", serif;
 }
@@ -21,9 +21,9 @@
   font-size: 1.1em;
   line-height: 1.3em;
 }
-.users h1{
+.users h1 {
   padding-bottom: 2.5%;
-  color:  #95001b;
+  color: #95001b;
   font-size: 40px;
   font-family: "poppins", serif;
 }
@@ -43,7 +43,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4em;
   text-align: center;
-  padding: 8% 4% 3% 4%;
+  padding: 4%;
+  height: 100%;
 }
 .item h1 {
   color: rgba(255, 255, 255, 0.842);
@@ -102,7 +103,7 @@
     font-size: 0.8em;
   }
   .points {
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0;
     height: 100%;
     padding-bottom: 7%;
@@ -126,10 +127,9 @@
   }
 
   .grid3 {
-    width: 100vw;
+    /* width: 100vw; */
     grid-auto-rows: 90px;
     margin: 0;
-
     margin-top: 10%;
     padding: 4% 0;
     grid-gap: 0;

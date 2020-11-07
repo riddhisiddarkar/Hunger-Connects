@@ -16,7 +16,6 @@ function AllFoodBanks({ match, history }) {
                     console.log(res.data);
                     setlocation(res.data)
                 }).catch(err => {
-                    alert("catch1")
                     console.log(err);
                 })
         // })

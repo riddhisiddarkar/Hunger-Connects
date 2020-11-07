@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-function Navbar() {
+function Navbar({history}) {
   const opennavbar = () => {
     document.querySelectorAll(".line").forEach((element,i) => {
       element.classList.toggle("open")
     });
     document.querySelector(".navlinks").classList.toggle("open")
-    }
+  }
+  const logout = () => {
+    alert("U have successfully logged out");
+    localStorage.removeItem("hungereats");
+  }
   return (
     <div>
       <nav>
@@ -30,12 +34,20 @@ function Navbar() {
             <li className="navlink" id="contactme">
               Contact Us
             </li>
-            <li className="navlink" id="login">
-              Logout
-            </li>
-            <li class="navlink" id="Donate">
+            <li class="navlink" id="donate">
               Donate
             </li>
+                <Link to="login">
+            {
+              localStorage.getItem("hungerconnects") ?
+                <li className="navlink" id="logout" onClick={logout}>
+                  Logout
+            </li> :
+            <li className="navlink" >
+                    Login
+            </li>
+            }
+            </Link>
           </ul>
         </div>
       </nav>

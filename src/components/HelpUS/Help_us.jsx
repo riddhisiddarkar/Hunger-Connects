@@ -32,7 +32,7 @@ function Help_us({history}) {
         //     .then(res => {
         //         console.log("Success");
         thanks.style.display = "block"
-        history.push("/")
+        history.push("/location")
         // })
     }
     return (

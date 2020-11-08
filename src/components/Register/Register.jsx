@@ -28,19 +28,19 @@ function Register({history}) {
                     <h2>Sign Up</h2>
                     <label>
                     <span>Name:</span>
-                    <input type="text"  onChange={(e) => setName(e.target.value)} />
+                    <input type="text"  onChange={(e) => setName(e.target.value)} autocomplete="off" />
                     </label>
                     <label>
                     <span>Email Address:</span>
-                    <input type="text"  onChange={(e) => setEmail(e.target.value)} />
+                    <input type="text"  onChange={(e) => setEmail(e.target.value)} autocomplete="off" />
                     </label>
                     <label>
                     <span>Password:</span>
-                    <input type="text"  onChange={(e) => setPassword(e.target.value)} />
+                    <input type="text"  onChange={(e) => setPassword(e.target.value)} autocomplete="off" />
                     </label>
                     <label>
                     <span>Confirm Password:</span>
-                    <input type="text"  onChange={(e) => setCpassword(e.target.value)} />
+                    <input type="text"  onChange={(e) => setCpassword(e.target.value)} autocomplete="off" />
                     </label>
                     <button className="submit" type="submit" onClick={submitlogin}>Sign Up</button>
                     <p className="question">Already a member?</p>

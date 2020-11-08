@@ -37,7 +37,7 @@ function Navbar({history}) {
             <li class="navlink" id="donate">
               Donate
             </li>
-                <Link to="login">
+                <Link to="/">
             {
               localStorage.getItem("hungerconnects") ?
                 <li className="navlink" id="logout" onClick={logout}>

@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 .FoodBankPage {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  min-height: 90vh;
+  min-height: 85.5vh;
 }
 .connectingbutton {
   color: brown;

@@ -28,11 +28,11 @@ function Login({history}) {
                     <h2>Sign In</h2>
                     <label>
                     <span>Email Address:</span>
-                    <input type="text"  onChange={(e) => setEmail(e.target.value)} />
+                    <input type="text" autocomplete="off"  onChange={(e) => setEmail(e.target.value)} />
                     </label>
                     <label>
                     <span>Password:</span>
-                    <input type="text" onChange={(e) => setPassword(e.target.value)} />
+                    <input type="text" autocomplete="off" onChange={(e) => setPassword(e.target.value)} />
                     </label>
                     <button className="submit" type="submit" onClick={submitlogin}>Sign In</button>
                     <p className="question">New here?</p>
